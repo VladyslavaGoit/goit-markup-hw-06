@@ -212,7 +212,7 @@ header {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   cursor: pointer;
 
@@ -633,7 +633,7 @@ header {
 }
 .mailing-form-input {
   padding: 15px 16px;
-  width: 360px;
+  width: 336px;
   height: 50px;
 
   background-color: transparent;
@@ -642,6 +642,7 @@ header {
   border-radius: 4px;
 }
 .mailing-button {
+  width: 200px;
   gap: 10px;
 }
 .mailing-button-icon {
@@ -721,13 +722,40 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 .form-label-terms {
+  padding-left: 36px;
+  font-weight: 400;
   line-height: 1.714;
   letter-spacing: 0.03em;
   user-select: none;
+  cursor: pointer;
 }
 .checkbox {
+  position: relative;
+  display: flex;
+  justify-content: start;
+
   margin-bottom: 30px;
 }
 .checkbox-link {
   color: var(--accent-color);
+}
+.checkbox-icon {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  fill: transparent;
+  border-top: 1.8px solid var(--title-text-color);
+  border-bottom: 1.8px solid var(--title-text-color);
+  border-right: 1.85px solid var(--title-text-color);
+  border-left: 1.85px solid var(--title-text-color);
+  border-radius: 2px;
+  pointer-events: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:checked + .checkbox-icon {
+  fill: var(--primary-background-color);
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  border-color: transparent;
 }
