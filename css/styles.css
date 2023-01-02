@@ -636,6 +636,7 @@ header {
   width: 336px;
   height: 50px;
 
+  color: var(--primary-text-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -680,6 +681,7 @@ textarea {
   padding: 0 12px 0 40px;
   height: 40px;
   width: 100%;
+  outline: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
